@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+<body>  
+    <h1>Задание 1</h1>
+    <h2>Нахождение максимального значения</h2>
+    <p>Введите 3 числа</p>
+    <form method="GET" action='/compare'>
+        <p>Введите A:</p>
+        <input name='a' spellcheck="false" autocomplete="off"/>
+        <p>Введите B:</p>
+        <input name='b' spellcheck="false" autocomplete="off"/>
+        <p>Введите C:</p>
+        <input name='c' spellcheck="false" autocomplete="off"/>
+        <br />
+        <br />
+        <input type="submit" value="Вычислить" />
+    </form>
+
+    <h1>Задание 2</h1>
+    <h2>Вывод значения из JSON массива по индексу</h2>
+    <form method="GET" action='/json'>
+        <p>Введите индекс массива (от 0 до 4)</p>
+        <input name='index' spellcheck="false" autocomplete="off"/>
+        <br />
+        <br />
+        <input type="submit" value="Вывести" />
+    </form>
+
+    <h1>Задание 3</h1>
+    <h2>Создание HTML страницы с формой запроса</h2>
+    <form method="GET" action='/generate'>
+        <p>Введите массив названий полей (через пробел)</p>
+        <input name='fields' spellcheck="false" autocomplete="off" placeholder="name surname age"/>
+        <p>Введите адрес запроса</p>
+        <input name='address' spellcheck="false" autocomplete="off" placeholder="/example"/>
+        <br />
+        <br />
+        <input type="submit" value="Создать" />
+    </form>
+</body>
+</html>

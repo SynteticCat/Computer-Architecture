@@ -20,4 +20,5 @@ function readItemsRec(items, root) {
 }
 
 const items = fs.readdirSync('./task4');
+console.log(items);
 readItemsRec(items, './task4');

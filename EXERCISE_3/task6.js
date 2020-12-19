@@ -1,37 +1,52 @@
 "use strict"
 
-const obj = {
+const obj1 = {
+    a: {
+        b: {
+            c: 12,
+            d: { 
+                e: 'asd' 
+            }
+        }
+    }
+};
+
+const obj2 = {
+    a: {
+        b: {
+            c: 12,
+            d: () => 123
+        }
+    }
+};
+
+const obj3 = {
     a: {
         b: [
             12,
             { 
-                c: 'asd' 
-            }
-        ]
-    },
-    d: {
-        e: [
-            12,
-            { 
-                f: {
-                    g: 34
-                } 
+                e: 'asd' 
             }
         ]
     }
 };
 
-function isObject(item) {
-    return item === Object(item);
-};
-
-function calcObjectDepth(item, n) {
-    if (isObject(item)) {
-
-        for (let key in item) {
-            const newItem = item[key];
+function calcObjectDepth(item, n = 0) {
+    if (typeof item != 'object') {
+        return n;
+    } else if (typeof item === 'function') {
+        return n;
+    //  корректно работает для объектом и для массивов, массивы это тоже объекты
+    } else {
+        const depths = [];
+        for (const key in item) {
+            const depth = calcObjectDepth(item[key], n + 1);
+            depths.push(depth);
         }
+        return Math.max(...depths);
     }
-
-    return 
 };
+
+console.log('Depth of object 1:', calcObjectDepth(obj1));
+console.log('Depth of object 2:', calcObjectDepth(obj2));
+console.log('Depth of object 3:', calcObjectDepth(obj3));
