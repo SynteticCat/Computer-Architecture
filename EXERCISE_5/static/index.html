@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Моя страница</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Задание 1</h1>
+    <h3>Хранение списка людей на сервере (в файле)</h3>
+    <p>Введите информацию о человеке (для добавления в файл)</p>
+
+    <p>Имя</p>
+    <input id="field-name" type="text" spellcheck="false" autocomplete="off" required>
+
+    <p>Электронная почта</p>
+    <input id="field-email" type="email" spellcheck="false" autocomplete="off" required>
+
+    <p>Мобильный телефон</p>
+    <input id="field-tel" type="tel" spellcheck="false" autocomplete="off" required 
+        pattern="8[0-9]{10}">
+
+    <br>
+    <br>
+
+    <button id="send-info-btn">Отправить</button>
+
+    <br>
+    <br>
+
+    <h3>Статус операций</h3>
+    <div id="operations-info"></div>
+
+    <script src='./code.js'></script>
+</body>
+</html>

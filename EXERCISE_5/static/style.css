@@ -1,0 +1,15 @@
+.person-added {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin: 5px 0;
+    width: fit-content;
+}
+
+.person-exist {
+    padding: 5px 10px;
+    background-color:  #f44336;
+    color: white;
+    margin: 5px 0;
+    width: fit-content;
+}
