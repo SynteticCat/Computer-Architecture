@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 6</title>
+</head>
+<body>
+    <h1>Задание 2</h1>
+    <h3>Работа с Cookie</h3>
+    <p>Реализовать сервис для авторизации пользователя</p>
+    <hr>
+
+    <h3>Техническая информация</h3>
+
+    <span>Такой пользователь есть в базе: </span>
+    {{#if this.signedIn}}
+        <span style="background: #ADFF2F; padding: 5px;">да</span>
+    {{else}}
+        <span style="background: #F08080; padding: 5px;">нет</span>
+    {{/if}}
+
+    <br><span>Вся информация о пользователе есть в Cookie: </span>
+    {{#if this.hasCookie}}
+        <span style="background: #ADFF2F; padding: 5px;">да</span>
+    {{else}}
+        <span style="background: #F08080; padding: 5px;">нет</span>
+    {{/if}}
+
+    <h3>Информация о пользователе из Cookie</h3>
+    <span>Логин: </span><span>{{this.login}}</span><br>
+    <span>Пароль: </span><span>{{this.password}}</span><br>
+    <span>Возраст: </span><span>{{this.age}}</span>
+
+</body>
+</html>

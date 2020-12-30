@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task 6</title>
+</head>
+<body>
+    <h1>Задание 1</h1>
+    <h3>Работа с шаблонизатором</h3>
+    <p>Вывести список доступных игр с учетом возрастного ограничения</p>
+
+    <div style="display: flex">
+        {{#each games}}
+            <div style="background: #AFEEEE; margin: 15px; padding: 8px;">
+                <h3>"{{this.name}}"</h3>
+
+                <div>
+                    <b>Описание:</b><br>
+                    <div>{{this.description}}</div>
+                </div>
+
+                <br>
+
+                <div>
+                    <b>Ограничение:</b><br>
+                    {{this.ageRestriction}}+
+                </div>
+            </div>
+        {{/each}}
+    </div>
+
+</body>
+</html>

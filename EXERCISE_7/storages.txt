@@ -1,0 +1,7 @@
+Dubai;["Lamborghini Huracan","Porsche Carrera"]
+Dagestan;["Lada Priora","Porsche Carrera","Mersedes Benz S Class"]
+Moscow;["Porsche Carrera","Toyota Chaser Tourser V","Mersedes Benz S Class","Mitsubishi Lancer"]
+New York;["Ford"," Dodge","Ferrari"]
+Kaliningrad;["Lada Calina 2015","Porche 2016"]
+Germany;["A","B","C"]
+abc;["a"," b"," c"]

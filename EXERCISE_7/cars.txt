@@ -1,0 +1,9 @@
+VW Polo;600000
+Lamborghini Huracan;20000000
+Mitsubishi Lancer;450000
+Porsche Carrera;8000000
+Lada Priora;480000
+Mersedes Benz S Class;8500000
+Bugatti Veyron;100000000
+Lada Calina 2015;520000
+Lada Priora 2017;135000
